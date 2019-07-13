@@ -1,0 +1,12 @@
+@import '_colors';
+.progress-bar-container {
+	padding: 10px 0px;
+	width: 100%;
+	position: relative;
+	.progress-bar {
+		background-color: $color-yellow;
+		&.progress-bar-danger {
+			background-color: $color-danger
+		}
+	}
+}

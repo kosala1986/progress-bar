@@ -1,0 +1,30 @@
+@import '_colors';
+@import '_mixins';
+.app-container {
+	line-height: 1.5em;
+	.header-container {
+		@include flex-init;
+		padding: 10px 0px;
+	}
+	.progress-bar-wrapper {
+		@include flex-init(column, center);
+		padding: 10px 10px;
+		min-height: 200px;
+		background-color: $color-light-blue;
+		progress-bar {
+			width: 100%;
+		}
+	}
+	.button-container {
+		@include flex-init;
+		padding: 10px 0px;
+		@media screen and (min-width: 321px) and (max-width: 480px) {
+			text-align: center;
+		}
+		.range-container {
+			@media screen and (min-width: 321px) and (max-width: 480px) {
+				padding: 10px 0px;
+			}
+		}
+	}
+}
