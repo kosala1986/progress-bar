@@ -14,6 +14,7 @@ export class BaseService {
 
   constructor(private http: HttpClient) { }
 
+  // Get method
   get(): Observable<Bar> {
     let header = this.createHeader();
     return this.http.get<Bar>(`${environment.endPointURL}`, { headers: header })
@@ -25,7 +26,7 @@ export class BaseService {
         catchError(this.handleError)
       );
   }
-
+  // Create header
   createHeader(): HttpHeaders {
     let header = new HttpHeaders().set('Accept', 'application/vnd.github.v3+json');
     return header;

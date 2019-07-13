@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     this.triggerValue = (percentage) / 100 * this.progressBars['limit'];
     for (let i: number = 0, l: number = this.pBarValuePair.length; i < l; i++) {
       let barID: number = this.pBarValuePair[i]['barId'];
-      if (barID == this.selectedBar) {
+      if (barID === this.selectedBar) {
         let sum: number = this.pBarValuePair[i]['value'] + this.triggerValue;
         this.pBarValuePair[i]['value'] = sum;
         break;
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
   }
   // Catch onchange event
   selectedProgressBar(event): void {
-    this.selectedBar = event.target.value;
+    this.selectedBar = parseInt(event.target.value);
 
   }
 
