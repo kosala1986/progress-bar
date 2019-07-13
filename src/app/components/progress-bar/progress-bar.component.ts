@@ -29,7 +29,6 @@ export class ProgressBarComponent implements OnInit, OnChanges {
   setProgress(): number {
     let progress: number = 0;
     progress = Math.round((this.barCount / this.limit) * 100);
-    console.log(this.progress);
     return progress;
   }
   ngOnChanges(): void {
