@@ -5,10 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-1.`npm install`.
-2.`ng lint` to run linter.
-2.`ng serve`.
-Build with `ng build --prod`.
+1.`npm install`.&nbsp;
+2.`ng lint` to run linter.&nbsp;
+3.`ng serve`.&nbsp;
+Build with `ng build --prod`.&nbsp;
 
 ## Code scaffolding
 
